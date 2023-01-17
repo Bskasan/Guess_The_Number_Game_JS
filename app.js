@@ -18,7 +18,7 @@ function checkNumber() {
     output.innerHTML = "--- That's not a Number ---";
   } else {
     output.innerHTML = "--- Lower, it has to be between 1 and 100 ---";
-  }
+  }                                                                                                                                                                                 
 }
 
 enterButton.addEventListener("click", () => {
