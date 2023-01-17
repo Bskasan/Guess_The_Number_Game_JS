@@ -3,3 +3,71 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#container{
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+}
+
+.img-container{
+    text-align: center;
+}
+
+.img-container img{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px lightgray;
+    
+}
+
+.text{
+    margin: 30px auto;
+}
+
+.big-header{
+    font-family: 'Anton', sans-serif;
+    font-size: 3rem;
+}
+
+.middle-header{
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.number-of-attempts{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.userInput{
+    padding: 1rem;
+    width: 300px;
+    height: 30px;
+    box-shadow: 3px 3px 3px lightgray;
+    border-radius: 10px;
+}
+
+#check-button{
+    width: 100px;
+    height: 30px;
+    margin-left: 0.5rem;
+    background-color: rgba(0, 0, 255, 0.877);
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+    color: white;
+    border-radius: 5px;
+}
+
+#check-button:hover{
+    background-color: lightblue;
+    cursor: pointer;
+    color: black;
+}
+
+
+
+
