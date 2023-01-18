@@ -20,15 +20,30 @@
     <title>Guess The Number</title>
   </head>
   <body>
-    <div class="img-container">
-      <img
-        src="./images/question.jpg"
-        alt="question-image"
-        class="question-img"
-      />
+    <header>
+      <h1 class="text big-header">Guess The Number ( 1 - 100 )</h1>
+    </header>
+    <main>
+      <div class="input-con">
+        <input type="number" class="input" name="number-guess" />
+        <button id="check-button">Check</button>
+      </div>
+      <div class="img-con">
+        <img
+          src="./images/question.jpg"
+          alt="question-image"
+          class="question-img"
+        />
+      </div>
+      <div class="description-con">
+        <h2 class="result">Write the Number</h2>
+        <p class="live-con">Number of Attempts: <span id="attempts-num">3</span></p>
+      </div>
+    </main>
+    <!--  <div class="img-container">
+      
     </div>
     <div id="container">
-      <p class="text big-header">Guess The Number ( 1 - 100 )</p>
       <input class="userInput" />
       <button id="check-button">Check</button>
       <p class="text middle-header">Write the Number</p>
@@ -36,7 +51,7 @@
     </div>
 
     <div id="message-container"></div>
-
+ -->
     <script src="app.js"></script>
   </body>
 </html>
