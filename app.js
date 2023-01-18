@@ -1,26 +1,41 @@
-const enterButton = document.getElementById("check-button");
-const output = document.querySelector(".middle-header");
+//*************** VARIABLES **************/
 
-let randomNumber = Math.ceil(Math.random() * 100);
+const userInput = document.querySelector(".input");
+const button = document.querySelector(".input-con button");
 
-function checkNumber() {
-  let input = document.querySelector(".userInput").value;
-  console.log(randomNumber);
-  if (input === randomNumber) {
-    output.innerHTML = "You guessed right, Congrat!!!" + randomNumber;
-  } else if (input > randomNumber) {
-    output.innerHTML = "--- You guessed too high ---";
-  } else if (input < randomNumber) {
-    output.innerHTML = "--- You guessed too low ---";
-  } else if (input < 1) {
-    output.innerHTML = "--- Higher, it has to be between 1 and 100 ---";
-  } else if (isNaN(input)) {
-    output.innerHTML = "--- That's not a Number ---";
-  } else {
-    output.innerHTML = "--- Lower, it has to be between 1 and 100 ---";
-  }                                                                                                                                                                                 
-}
+//? Get a number between 1 and 100.
+let randomNum = Math.ceil(Math.random() * 100);
+let liveNum = 3;
 
-enterButton.addEventListener("click", () => {
-    checkNumber();
-})
+//*************** EVENT LISTENER **************/
+button.addEventListener("click", () => {
+  console.log(userInput.value);
+  let inputValue = userInput.value;
+  liveNum--;
+  console.log('Live: ', liveNum);
+
+  //if input is NaN
+  if (isNaN(inputValue)) {
+    console.log("Please enter a number");
+  }
+
+  //Win
+  if (inputValue === randomNum) {
+    console.log("You win");
+  }
+
+  //Lower Number
+  if (inputValue < randomNum) {
+    console.log("Higher");
+  }
+
+  //Higher Number
+  if (inputValue > randomNum) {
+    console.log("Lower");
+  }
+
+  //if live is 0
+  if(liveNum == 0){
+    console.log("You Lost");
+  }
+});
