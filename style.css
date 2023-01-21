@@ -23,7 +23,7 @@ header {
 }
 
 .input-con {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   height: 100px;
@@ -84,4 +84,33 @@ header {
   margin-top: 25px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
+  visibility: hidden;
+}
+
+.btn-con{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.btn-con button{
+  padding: 8px 20px;
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 255, 0.877);
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 600;
+  color: white;
+  border-radius: 5px;
+}
+
+.btn-con button:hover {
+  background-color: lightblue;
+  cursor: pointer;
+  color: black;
+}
+
+.restart{
+  display: none;
 }
